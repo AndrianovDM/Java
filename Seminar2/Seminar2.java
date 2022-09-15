@@ -48,3 +48,25 @@
 //         return sb.toString();
 //     } 
 // }
+
+// import java.util.Scanner;
+// import java.util.logging.Logger;
+// import java.io.File;
+// import java.io.FileWriter;
+// import java.io.Writer;
+
+// public class Seminar2{
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         byte b = scan.nextByte();
+//         Logger l = Logger.getAnonymousLogger();
+//         try (FileWriter wr = new FileWriter("results.txt",false)){
+//             wr.write(String.valueOf(b));
+//             wr.flush();
+//         }
+//         catch (Exception ex)
+//         {
+//             l.warning(ex.getMessage());
+//         }
+//     }
+// }
