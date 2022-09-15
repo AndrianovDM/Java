@@ -19,3 +19,32 @@
 //     } 
 // }
     
+// jewels = "aB", stones = "aaaAbbB"
+// результат в консоль "a3B1"
+
+// import java.util.Scanner;
+// import java.util.logging.Logger;
+
+// public class Seminar2{
+//     public static void main(String[] args) {
+
+//         Logger l = Logger.getAnonymousLogger();
+
+//         l.info(search("aB","aaaBaAbbbB"));
+        
+//     }
+//     private static String search(String jewels, String stones){
+//         int counter;
+//         StringBuilder sb = new StringBuilder();
+//         for(char c1: jewels.toCharArray()){
+//             counter = 0;
+//             for(char c2: stones.toCharArray()){
+//                 if (c1 == c2){
+//                     counter++;
+//                 }
+//             }
+//             sb.append(c1).append(counter);
+//         }
+//         return sb.toString();
+//     } 
+// }
