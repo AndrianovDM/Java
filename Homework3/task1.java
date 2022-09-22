@@ -3,30 +3,25 @@
 
 package Homework3;
 
-import java.util.Arrays;
-
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
 public class task1 {
 
-    static int[] AddItemInArray(int[] array, int item) {
-        int length = array.length;
-        int[] temp = new int[length + 1];
-        System.arraycopy(array, 0, temp, 0, length);
-        temp[length] = item;
-        return temp;}
-
         public static void main(String[] args) {
-            int[] ArrayList = new int[] {};
-            int[] ArrayListNew = new int[] {};
-            ArrayList = AddItemInArray(ArrayList, 11);
-            ArrayList = AddItemInArray(ArrayList, 50);
-            ArrayList = AddItemInArray(ArrayList, 13);
-            ArrayList = AddItemInArray(ArrayList, 30);
-            ArrayList = AddItemInArray(ArrayList, 121);
-            ArrayList = AddItemInArray(ArrayList, 20); 
-            for (int i = 0; i < ArrayList.length; i++){
-                if( ArrayList[i]%2 !=0){
-                    ArrayListNew = AddItemInArray(ArrayListNew, ArrayList[i]);}
+            List<Integer> list = new ArrayList<Integer>();
+            list.add(11);
+            list.add(50);
+            list.add(13);
+            list.add(30);
+            list.add(121);
+            list.add(20);
+            System.out.println("Old List: " + list);
+            for (Iterator<Integer> iterator = list.iterator(); iterator.hasNext();) {
+                Integer number = iterator.next();
+                if (number % 2 == 0) {
+                    iterator.remove();}
+                }
+            System.out.println("New List: " + list);
             }
-            System.out.println(Arrays.toString(ArrayListNew));
         }
-}
